@@ -1,0 +1,30 @@
+<h1>Authors</h1>
+<ul id="authors"></ul>
+
+<script>
+
+const ul = document.getElementById('authors');
+
+
+
+const url = 'https://api.typeform.com/forms/qKfnLYpq/responses';
+
+function createNode(element) {
+    return document.createElement(element);
+}
+
+function append(parent, el) {
+    return parent.appendChild(el);
+}
+
+fetch(url)
+  .then((resp)=> resp.json())
+  .then(function(data) {
+      return data.results
+    })
+  })
+  .catch(function(error) {
+
+  });
+
+</script>
